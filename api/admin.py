@@ -26,7 +26,7 @@ class CustomUserAdmin(UserAdmin):
             'fields': ('last_login', 'date_joined')
         }),
         ('Additional info', {
-            'fields': ('streaming_key','playback_url', 'rtmps_url')
+            'fields': ('streaming_key','playback_url', 'rtmps_server')
         })
     )
 
@@ -47,7 +47,7 @@ class CustomUserAdmin(UserAdmin):
             'fields': ('last_login', 'date_joined')
         }),
         ('Additional info', {
-            'fields': ('streaming_key','playback_url', 'rtmps_url')
+            'fields': ('streaming_key','playback_url', 'rtmps_server')
         })
     )
 

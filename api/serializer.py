@@ -7,7 +7,7 @@ from api.models import CustomUser
 class SignupSerializer(serializers.ModelSerializer):
     class Meta:
         model = CustomUser
-        fields = ["username", "email", "phone", "password", "playback_url", "rtmps_server", "streaming_key"]
+        fields = ["username", "email", "phone", "password"]
 
     def create(self, validated_data):
         validated_data["playback_url"] = ivs_channel_data.get("playback_url")
@@ -27,4 +27,4 @@ class UserSerializer(serializers.ModelSerializer):
 class SelfSerializer(serializers.ModelSerializer):
     class Meta:
         model = CustomUser
-        fields = ["first_name", "last_name", "email", "username", "playback_url", "rtmps_url", "streaming_key"]
+        fields = ["first_name", "last_name", "email", "username", "playback_url", "rtmps_server", "streaming_key"]
