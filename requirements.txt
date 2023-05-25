@@ -15,3 +15,4 @@ six==1.16.0
 sqlparse==0.4.4
 typing-extensions==4.6.0
 urllib3==1.26.16
+psycopg2==2.9.6
