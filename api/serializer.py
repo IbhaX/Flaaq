@@ -21,7 +21,7 @@ class SignupSerializer(serializers.ModelSerializer):
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = CustomUser
-        fields = ["username", "playback_url"]
+        fields = ["id", "username", "playback_url"]
 
 
 class SelfSerializer(serializers.ModelSerializer):
